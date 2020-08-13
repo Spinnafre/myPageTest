@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="root">
+        <header class="cabecalho">
+            <div class="logo fade">
+                <a href="#inicio">
+                    <img src="./assets/img/LOGO.png" alt="Logo" />
+                </a>
+            </div>
+            <nav class="menu fade">
+                <ul>
+                    <li class="nav ">
+                        <a href="#inicio" onclick="curretNav(1)">Início</a>
+                    </li>
+                    <li class="nav">
+                        <a onclick="curretNav(2)">Images</a>
+                    </li>
+                    <li class="nav">
+                        <a onclick="curretNav(3)">Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <aside class="autenticacao">
+                    <input type="text" id="search" name="search" placeholder="Pesquisar" class="input search">
+                </aside>
+                <aside class="autenticacao">
+                    <a href="#login">Login</a>
+                    <a href="#registar" class="botao destaque">Registrar</a>
+                </aside>
+
+            </div>
+        </header>
+
+        <div id='Content-group'>
+            <div class="Content">
+                <main>
+                    <article>
+                        <main class="slides">
+                            <div class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                    <img src="./assets//img/p1.jpg" style="width:100%">
+                                    <div class="text">Praia 1</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="./assets/img/2.jpg" style="width:100%">
+                                    <div class="text">Praia 2</div>
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="./assets/img/3jpg.jpg" style="width:100%">
+                                    <div class="text">Praia 3</div>
+                                </div>
+
+                                <a class="prev" onclick="plusSlides(-1)">
+                                    < </a>
+                                        <a class="next" onclick="plusSlides(1)">></a>
+
+                            </div>
+                            <br>
+
+                            <div style="text-align:center; margin-bottom:50px">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                            </div>
+                        </main>
+                        <main class="textContent">
+                            <div>
+                                <h1>Belíssimas imagens</h1>
+                                <span>
+                                    As praias centrais de Fortaleza -- Iracema, Meireles e Mucuripe
+                                    são bonitas, porém impróprias para banho. Para um dia na praia, você vai
+                                    precisar ir pelo menos até a Praia do Futuro. Praias próximas também são destino
+                                    de bate-voltas que podem ser feitos com carro alugado ou em passeio organizado.
+                                    Os passeios podem ser comprados na recepção do seu hotel ou em agências de turismo
+                                    receptivo da Beira-Mar.
+                                </span>
+                                <h2>Praia do Futuro</h2>
+                                <img src="./assets/img/Praia do futuro.jpg" alt="Praia do futuro.jpg">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1pwPhXryb4D0Jupsgxt5ZTyF5ZCU"
+                                    width="720" height="480"></iframe>
+                                <span>
+                                    Fica a pouco mais de 10 minutos de carro da Beira-Mar: você sai por Mucuripe, segue
+                                    pelo
+                                    região portuária e logo estará na av. César Cals, que é paralela à praia. Vire em
+                                    qualquer transversal e você dará na av. Zezé Diogo (renomeada oficialmente Clóvis
+                                    Arrais
+                                    Maia), a beira-mar da Praia do Futuro. São 6 km de praia reta e com faixa
+                                    larguíssima de
+                                    areia, onde estão instaladas as megabarracas que são uma das marcas registradas de
+                                    Fortaleza: são pelos menos 30. Além do serviço de praia, todas têm restaurantes
+                                    cobertos
+                                    (em dois ou três casos, refrigerados!). Playground para crianças não são incomuns
+                                    (algumas têm até piscina). As mais estruturadas têm mais cara de clube do que de
+                                    barraca
+                                    de praia.
+                                    <br><br>
+
+                                    O que eu curto mais na Praia do Futuro: está completamente a salvo de carros, bugues
+                                    e
+                                    quadriciclos na areia.
+                                    <br><br>
+
+                                    A barraca mais mega é a Crocobeach (nº 3.125). Outras barracas com boa estrutura
+                                    para
+                                    crianças são a Itapariká (nº 6.801), a Chico do Caranguejo (nº 4.945) e Atlantidz
+                                    (nº
+                                    5.581).
+                                    <br><br>
+
+                                    Para um clima menos família, com música de DJ, tendas e sofazões, escolha entre a
+                                    Órbita
+                                    Brasil (nº 3879), que é a mais nova e mais charmosa, sem nenhum móvel de plástico
+                                    nem
+                                    mesmo sobre a areia, a Guarderia Brasil (nº 4.451) e a Sunrise Brasil (nº 4.959).
+                                    <br><br>
+
+                                    Numa linha mais saúde, a Santa Praia (nº 3.345) tem quadras de tênis de praia.
+                                    <br><br>
+
+                                    Se você for do time LGBT, então sua barraca é a Cabumba (nº 3.911).
+                                    <br><br>
+
+                                    Mas o que você procura é sossego? Pois não. A barraca do hotel Vila Galé (ponha no
+                                    Waze
+                                    o hotel Vila Galé Fortaleza) tem bom restaurante e está num ponto em que se formam
+                                    piscininhas na areia na maré baixa.
+
+                                    <br><br>
+                                    <strong style="display: inline;">ATENÇÃO</strong>: não caminhe no calçadão ou na
+                                    praia por áreas ermas; há
+                                    muitos relatos de
+                                    assaltos. Nas barracas e no seu entorno imediato, porém, a segurança é total (só não
+                                    deixe seus pertences de bobeira, claro).
+                                    <br><br>
+
+                                    Nas <strong style="display: inline;">noites de 5ª feira</strong>, muitas barracas
+                                    funcionam com o combo
+                                    caranguejada + show de
+                                    humor.
+                                </span>
+                            </div>
+                        </main>
+
+                    </article>
+                </main>
+            </div>
+            <div class="Content">
+                <main class="textContent">
+                    <div>
+                        <h1>
+                            Estado do Ceará
+                        </h1>
+                        <p>
+                            O Estado do Ceará está localizado na região Nordeste do Brasil. A capital é Fortaleza e a
+                            sigla CE.
+                        </p>
+                        <ul>
+                            <li>
+                                Área: 148.886.308 quilômetros quadrados
+                            </li>
+                            <li>
+                                Limites: leste com Rio Grande do Norte e Paraíba, sul com Pernambuco, oeste com Piauí
+                                e a norte com o oceano Atlântico
+                            </li>
+                            <li>
+                                Número de Municípios: 184
+                            </li>
+                            <li>
+                                População: 8,4 milhões, segundo o IBGE (Instituto Brasileiro de Geografia e Estatística
+                            </li>
+                            <li>
+                                Gentílico: quem nasce no Ceará é chamado cearense
+                            </li>
+                        </ul>
+                        <h2>Cidade e Turismo</h2>
+                        <img src="./assets/img/ceara.jpg" alt="">
+                        <p>
+                            As cidades cearenses estão distribuídas em sete regiões. São elas: nordeste, região metropo
+                            litana de Fortaleza, sertões, Jaguaribe, norte, centro-sul e sul.
+                        </p>
+
+                        <p>
+                            Os principais destinos do Ceará são as praias localizadas nas regiões de Aquiraz, Camocin,
+                            Cumbuco, Canoa Quebrada, Jericoacoara e a capital Fortaleza.
+                        </p>
+                        <h2>Pontos Turísticos</h2>
+                        <p>
+                            Os locais são ideais para a contemplação da natureza e, ainda, a prática de esportes
+                            náuticos.
+                            Os esportes mais praticados nas praias cearenses são: mergulho, surf, windsurf, e suas
+                            variações.
+                        </p>
+                        <p>
+                            Na região do Cariri está localizada a Floresta Nacional do Araripe, uma APA (Área de
+                            Proteção Ambiental). Integrada por rica fauna e flora, oferece piscinas naturais para a
+                            realização de banhos terapêuticos, além de diversos balneários.
+                        </p>
+                        <p>
+                            A exploração do turismo, na modalidade ecoturismo, também é oferecida em Canoa Quebrada, no
+                            Parque Nacional do Ubajara e Ipiapaba. Nesses locais há intensa oferta de dunas, trilhas e
+                            cavernas.
+                        </p>
+                        <h2>Cultura</h2>
+                        <strong>Artesanato</strong>
+                        <p>
+                            O artesanato está entre as principais formas de identificação da cultura cearense. São
+                            típicos da região os bordados, redes, rendas de bilro, crochês e o trançado de algodão.
+                            Todos são herança da tradição portuguesa.
+                        </p>
+                        <p>
+                            A cestaria é encontrada na maioria das cidades. De trançado típico português, as peças são
+                            confeccionadas a partir da palha da carnaúba ou cipó. O produto dá origem a cestas, chapéus
+                            e bolsas.A mistura do português com o indígena é evidenciada na produção de bijuterias. São
+                            peças
+                            feitas com pedras semipreciosas misturadas ao crochê e ao bordado.
+                        </p>
+                    </div>
+                    <div class="border">
+                        <img src="./assets/img/LOGO.png" alt="">
+                        <aside>
+                            <strong>
+                                Sugestões
+                            </strong>
+                            
+                            <ul style="list-style: none;">
+                                <li>asdads</li>
+                                <li>asdadasd</li>
+                                <li>asdasdsada</li>
+                                <li>asdasdsada</li>
+                                <li>asdasdsada</li>
+                                <li>asdasdsada</li>
+                                <li>asdasdsada</li>
+                                <li>asdasdsada</li>
+                                <li>asdasdsada</li>
+                                <li>asdasdsada</li>
+                                <li>asdasdsada</li>
+                                <li>asdasdsada</li>
+                            </ul>
+                        </aside>
+                    </div>
+                </main>
+
+            </div>
+            <div class="Content">
+                <main class="textContent">
+                    <div>
+                        <form action="">
+                            <fieldset>
+                                <div class="cadastro-area">
+                                    <div class="name">
+                                        <label for="fname">Nome:</label>
+                                        <input type="text" id="fname" name="fname" required placeholder="Digite o nome"
+                                            class="input" style="width: 20rem;">
+                                    </div>
+                                    <br>
+
+                                    <div class="email">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" name="email" required
+                                            placeholder="Digite o seu e-mail aqui" class="input" style="width: 20rem;">
+                                    </div>
+                                    <br>
+
+                                    <div class="phone">
+                                        <label for="phone-number">Telefone:</label>
+                                        <input type="tel" id="phone-number" placeholder="Digite o seu número" required
+                                            class="input" style="width: 18.5rem;">
+                                    </div>
+                                    <br>
+                                    <div class="textCamp">
+                                        <label for="TextCamp">Mensagem:</label>
+                                        <textarea name="text" id="TextCamp" cols="70" rows="10"
+                                            style="resize: none"></textarea>
+                                    </div>
+                                    <br>
+
+                                    <div class="buttonForm">
+                                        <input type="submit" value="Submit" id='submit'>
+                                        <input type="reset" value="Reset" id='reset'>
+                                    </div>
+                            </fieldset>
+                        </form>
+                    </article>
+                </main>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="logo fade">
+            <a href="#inicio">
+                <img src="./assets/img/LOGO.png" alt="Logo" />
+            </a>
+        </div>
+        <span>
+            Teste Criado por DAVI
+        </span>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
